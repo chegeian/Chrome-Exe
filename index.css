@@ -1,6 +1,7 @@
 body {
      align-items: center;
     margin-left: 150px;
+    background-color: red;
 }
 
 #input-el {
