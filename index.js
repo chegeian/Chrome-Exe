@@ -6,6 +6,7 @@ const ulEl = document.getElementById("ul-el")
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
+    localStorage.setItem("myLeads" ,Json.stringify(myLeads))
     return renderLeads()
 })
 
@@ -19,6 +20,7 @@ for (let i = 0; i < myLeads.length; i++) {
                 </a>
             </li>
         `
+    let leadsFromLocalStorage  =  localStorage.getItem("myLeads" Json.parse(myLeads))
 }
 ulEl.innerHTML = listItems
 }
